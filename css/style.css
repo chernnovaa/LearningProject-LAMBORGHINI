@@ -192,6 +192,27 @@ body {
   padding: 100px 0 50px;
   color: #fff;
 }
+.evo-black__inner {
+  position: relative;
+}
+.evo-black__inner::before {
+  content: "";
+  background-image: url(../images/dec-1.svg);
+  width: 185px;
+  height: 213px;
+  top: 210px;
+  left: -130px;
+  position: absolute;
+}
+.evo-black__inner::after {
+  content: "";
+  background-image: url(../images/dec-2.svg);
+  width: 498px;
+  height: 572px;
+  top: 290px;
+  left: -40px;
+  position: absolute;
+}
 .evo-black__info {
   display: flex;
   justify-content: space-between;
@@ -212,6 +233,8 @@ body {
 .evo-black-img {
   display: block;
   margin: 170px auto 60px;
+  position: relative;
+  z-index: 1;
 }
 .evo__descr-list {
   display: flex;
@@ -223,6 +246,25 @@ body {
 }
 .evo-white__inner {
   padding-top: 125px;
+  position: relative;
+}
+.evo-white__inner::before {
+  content: "";
+  background-image: url(../images/dec-3.png);
+  width: 274px;
+  height: 257px;
+  top: -40px;
+  left: 360px;
+  position: absolute;
+}
+.evo-white__inner::after {
+  content: "";
+  background-image: url(../images/dec-4.png);
+  width: 324px;
+  height: 311px;
+  top: 115px;
+  left: 600px;
+  position: absolute;
 }
 .evo-white__text {
   margin-bottom: 30px;
@@ -242,7 +284,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 258px;
+  height: 264px;
   display: flex;
   justify-content: center;
   align-items: center;
