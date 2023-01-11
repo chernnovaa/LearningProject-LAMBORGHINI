@@ -418,3 +418,79 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.menu__mobile,
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .promo {
+    background-position: left center;
+  }
+  .menu__list {
+    display: none;
+  }
+  .menu__mobile {
+    display: flex;
+    gap: 0 20px;
+  }
+  .logo-img {
+    width: 50px;
+  }
+  .nav {
+    align-items: center;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .subtitle {
+    font-size: 42px;
+  }
+  .subtitle span {
+    font-size: 32px;
+  }
+}
+@media (max-width: 820px) {
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .menu-btn span {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .menu-mobile.menu--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #040404;
+    height: 100vh;
+    z-index: 5;
+    text-align: center;
+    padding-top: 140px;
+  }
+  .menu-link {
+    color: #fff;
+    font-size: 3vh;
+    display: block;
+    padding: 20px 0;
+  }
+  .logo {
+    z-index: 10;
+  }
+}
