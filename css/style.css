@@ -418,7 +418,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.menu__mobile,
+.menu-mobile,
 .menu-btn {
   display: none;
 }
